@@ -171,18 +171,18 @@
 
       // create sidebar and attach to menu open
       $(".ui.sidebar").sidebar("attach events", ".toc.item");
-      $('a[href^="#"]').on('click',function (e) {
+      $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
 
         var target = this.hash;
         var $target = $(target);
 
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
+          'scrollTop': $target.offset().top
         }, 600, 'swing', function () {
-            window.location.hash = target;
+          window.location.hash = target;
         });
-    });
+      });
     });
   </script>
 </head>
@@ -193,6 +193,7 @@
     <div class="ui container">
       <a href="#home" class="active item">Home</a>
       <a href="#about" class="item">About Me</a>
+      <a href="#projects" class="item">Projects</a>
       <a href="#contact" class="item">Contact</a>
       <div class="right item">
         <a class="ui basic right labeled icon button" href="https://github.com/EbrahimKreem" target="blank">My Github
@@ -205,6 +206,7 @@
   <div class="ui vertical inverted sidebar menu">
     <a href="#home" class="active item">Home</a>
     <a href="#about" class="item">About Me</a>
+    <a href="#projects" class="item">Projects</a>
     <a href="#contact" class="item">Contact</a>
   </div>
 
@@ -218,6 +220,7 @@
           </a>
           <a href="#home" class="active item">Home</a>
           <a href="#about" class="item">About Me</a>
+          <a href="#projects" class="item">Projects</a>
           <a href="#contact" class="item">Contact</a>
           <div class="right item">
             <a class="ui inverted right labeled icon button" href="https://github.com/EbrahimKreem" target="blank">My
@@ -266,8 +269,48 @@
         <li class="ui basic label">Redis</li>
         <li class="ui basic label">PWA's</li>
       </div>
+      <div class="ui text container">
+        <h4 class="ui horizontal header divider" id="projects">
+          <a href="#">Projects</a>
+        </h4>
+        <div class="ui raised cards" style="justify-content: space-between;"> 
+          <div class="card">
+            <div class="content">
+              <a class="header" href="https://ebrahimkreem.github.io/authentication-system/"
+                target="_blank">Authentication system</a>
+              <div class="description">
+                A full-stack app with react and apollo in the frontend and GraphQL and typescript in the backend
+              </div>
+            </div>
+            <a href="https://ebrahimkreem.github.io/authentication-system/" target="_blank"><button
+                class="ui linkedin bottom attached button fluid">Link</button></a>
 
-      <div class="ui text container" >
+          </div>
+          <div class="card">
+            <div class="content">
+              <a class="header" href="https://ebrahimkreem.github.io/realtime-form-validation/" target="_blank">Realtime
+                form validation</a>
+              <div class="description">
+                A basic form with realtime form validation using react, formik, semantic-ui-react
+              </div>
+            </div>
+              <a href="https://ebrahimkreem.github.io/realtime-form-validation/" target="_blank"><button
+                  class="ui linkedin bottom attached button fluid">Link</button></a>
+          </div>
+          <div class="card">
+            <div class="content">
+              <a class="header" href="https://rsvp-app2.herokuapp.com" target="_blank">RSVP app</a>
+              <div class="description">
+                A basic RSVP app with react + unstated
+              </div>
+            </div>
+              <a href="https://rsvp-app2.herokuapp.com" target="_blank"><button
+                  class="ui linkedin bottom attached button fluid">Link</button></a>
+          </div>
+         
+        </div>
+      </div>
+      <div class="ui text container">
         <h4 class="ui horizontal header divider" id="contact">
           <a href="#">Contact</a>
         </h4>
@@ -275,13 +318,16 @@
         <li class="ui basic label">ebrahemkreem40@gmail.com</li>
       </div>
     </div>
+  </div>
 
-    <div class="ui inverted vertical footer segment">
-      <div class="ui container">
-        <a class="ui large icon button" href="https://github.com/EbrahimKreem" target="blank"><i
-            class=" github icon"></i></a>
-      </div>
+  <div class="ui inverted vertical footer segment">
+    <div class="ui container">
+      <a class="ui large icon button" href="https://github.com/EbrahimKreem" target="blank"><i
+          class=" github icon"></i></a>
+          <a class="ui large icon twitter button" href="https://twitter.com/ebrahim_kreem" target="blank"><i
+            class="twitter icon"></i></a>
     </div>
+  </div>
   </div>
 </body>
 
