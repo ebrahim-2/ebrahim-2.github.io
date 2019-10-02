@@ -124,6 +124,10 @@
       }
     }
 
+    .ui.raised.cards {
+      justify-content: space-between;
+    }
+
     @media only screen and (max-width: 700px) {
       .ui.fixed.menu {
         display: none !important;
@@ -150,6 +154,10 @@
       .masthead h2 {
         margin-top: 0.5em;
         font-size: 1.5em;
+      }
+
+      .ui.raised.cards {
+        justify-content: center !important;
       }
     }
   </style>
@@ -239,98 +247,107 @@
       <i class="arrow down icon"></i>
     </div>
 
-    <div class="ui vertical stripe segment" id="about">
+    <div class="ui text container" id="about">
       <div class="ui text container">
-        <h4 class="ui horizontal header divider">
-          <a href="#">About Me</a>
-        </h4>
-
+        <div class="ui header ">
+          About Me
+        </div>
+        <div class="ui divider"></div>
         <p style="text-transform: capitalize;">
           Hi, I'm Ebrahim FullStack JavaScript Developer I Love Everything
           That JS Touches. Highly Motivated, Self-Starting Developer Seeking to launch a career building web application
           and services, familiar with development and deployment process for many web-based technologies
         </p>
-
-        <h4 class="ui blue label">My Technical Skills</h4>
+        <div class="ui hidden divider"></div>
+        <div class="ui header">Technical Skills</div>
+        <div class="ui divider"></div>
+        <div class="ui small header" style="margin-top: 0px;">Front-End:</div>
         <div style="margin-top: 20px;"></div>
-        <li class="ui basic label">TypeScript</li>
-        <li class="ui basic label">React</li>
-        <li class="ui basic label">Redux</li>
-        <li class="ui basic label">Next.js</li>
-        <li class="ui basic label">Semantic UI</li>
-        <li class="ui basic label">NodeJS</li>
-        <li class="ui basic label">Express</li>
-        <li class="ui basic label">MongoDB</li>
-        <li class="ui basic label">GraphQL</li>
-        <div style="margin-top: 10px;"></div>
-        <li class="ui basic label">Prisma</li>
-        <li class="ui basic label">TypeGraphQL</li>
-        <li class="ui basic label">JWT</li>
-        <li class="ui basic label">Redis</li>
-        <li class="ui basic label">PWA's</li>
-      </div>
-      <div class="ui text container">
-        <h4 class="ui horizontal header divider" id="projects">
-          <a href="#">Projects</a>
-        </h4>
-        <div class="ui raised cards" style="justify-content: space-between;">
-          <div class="card">
-            <div class="content">
-              <a class="header" href="https://ebrahimkreem.github.io/authentication-system/"
-                target="_blank">Authentication system</a>
-              <div class="description">
-                A full-stack app with react and apollo in the frontend and GraphQL and typescript in the backend
-              </div>
-            </div>
-            <div class="extra content"><a href="https://ebrahimkreem.github.io/authentication-system/"
-                target="_blank"><button class="ui inverted blue  button ">Link</button></a>
-              <a href="https://github.com/EbrahimKreem/authentication-system" target="_blank"><button
-                  class="ui  basic right floated right labeled icon button "><i class="github icon"></i>Source
-                </button></a></div>
+        <li class="ui basic black label">TypeScript</li>
+        <li class="ui basic black label">React</li>
+        <li class="ui basic black label">Redux</li>
+        <li class="ui basic black label">Next.js</li>
+        <li class="ui basic black label">SSR</li>
+        <li class="ui basic black label">Apollo-Client</li>
+        <li class="ui basic black label">Semantic UI</li>
+        <li class="ui basic black label">PWA's</li>
 
-          </div>
-          <div class="card">
-            <div class="content">
-              <a class="header" href="https://ebrahimkreem.github.io/realtime-form-validation/" target="_blank">Realtime
-                form validation</a>
-              <div class="description">
-                A basic form with realtime form validation using react, formik, semantic-ui-react
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://ebrahimkreem.github.io/realtime-form-validation/" target="_blank"><button
-                  class="ui inverted blue   button ">Link</button></a>
-              <a href="https://github.com/EbrahimKreem/realtime-form-validation" target="_blank"><button
-                  class="ui basic right floated right labeled icon  button "><i class="github icon"></i>Source
-                </button></a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="content">
-              <a class="header" href="https://rsvp-app2.herokuapp.com" target="_blank">RSVP app</a>
-              <div class="description">
-                A basic RSVP app with react + unstated
-              </div>
-            </div>
-            <div class="extra content">
-              <a href="https://rsvp-app2.herokuapp.com" target="_blank"><button
-                  class="ui inverted blue   button ">Link</button></a>
-              <a href="https://github.com/EbrahimKreem/RSVP-APP" target="_blank"><button
-                  class="ui basic right floated right labeled icon  button "><i class="github icon"></i>Source
-                </button></a>
+        <div class="ui small header">Backend:</div>
+        <li class="ui basic black label">NodeJS</li>
+        <li class="ui basic black label">Express</li>
+        <li class="ui basic black label">NestJS</li>
+        <li class="ui basic black label">TypeGraphQL</li>
+        <li class="ui basic black label">MongoDB</li>
+        <li class="ui basic black label">Prisma</li>
+        <li class="ui basic black label">Redis</li>
+        <li class="ui basic black label">GraphQL</li>
+        <li class="ui basic black label">JWT</li>
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="ui  header " id="projects">
+        Projects
+      </div>
+      <div class="ui divider"></div>
+      <div class="ui raised cards">
+        <div class="card">
+          <div class="content">
+            <a class="header" href="https://ebrahimkreem.github.io/authentication-system/"
+              target="_blank">Authentication system</a>
+            <div class="description">
+              A full-stack app with react and apollo in the frontend and GraphQL and typescript in the backend
             </div>
           </div>
+          <div class="extra content"><a href="https://ebrahimkreem.github.io/authentication-system/"
+              target="_blank"><button class="ui inverted blue  button ">Link</button></a>
+            <a href="https://github.com/EbrahimKreem/authentication-system" target="_blank"><button
+                class="ui  basic right floated right labeled icon button "><i class="github icon"></i>Source
+              </button></a></div>
 
         </div>
+        <div class="card">
+          <div class="content">
+            <a class="header" href="https://ebrahimkreem.github.io/realtime-form-validation/" target="_blank">Realtime
+              form validation</a>
+            <div class="description">
+              A basic form with realtime form validation using react, formik, semantic-ui-react
+            </div>
+          </div>
+          <div class="extra content">
+            <a href="https://ebrahimkreem.github.io/realtime-form-validation/" target="_blank"><button
+                class="ui inverted blue   button ">Link</button></a>
+            <a href="https://github.com/EbrahimKreem/realtime-form-validation" target="_blank"><button
+                class="ui basic right floated right labeled icon  button "><i class="github icon"></i>Source
+              </button></a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <a class="header" href="https://rsvp-app2.herokuapp.com" target="_blank">RSVP app</a>
+            <div class="description">
+              A basic RSVP app with react + unstated
+            </div>
+          </div>
+          <div class="extra content">
+            <a href="https://rsvp-app2.herokuapp.com" target="_blank"><button
+                class="ui inverted blue   button ">Link</button></a>
+            <a href="https://github.com/EbrahimKreem/RSVP-APP" target="_blank"><button
+                class="ui basic right floated right labeled icon  button "><i class="github icon"></i>Source
+              </button></a>
+          </div>
+        </div>
+
       </div>
-      <div class="ui text container">
-        <h4 class="ui horizontal header divider" id="contact">
-          <a href="#">Contact</a>
-        </h4>
-        <h4 class="ui blue label">Email Address</h4>
-        <li class="ui basic label">ebrahemkreem40@gmail.com</li>
+      <div class="ui hidden divider"></div>
+      <div class="ui header" id="contact">
+        Contact
       </div>
+      <div class="ui divider"></div>
+      <div class="ui small header">Email Address:</div>
+      <a href="mailto:ebrahemkreem40@gmail.com?Subject=Hello%20again" target="blank">ebrahemkreem40@gmail.com</a>
+      </p>
     </div>
+    <div style="margin-bottom: 5em;"></div>
+  </div>
   </div>
 
   <div class="ui inverted vertical footer segment">
